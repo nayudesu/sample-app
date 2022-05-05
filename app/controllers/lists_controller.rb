@@ -11,6 +11,10 @@ class ListsController < ApplicationController
     
     redirect_to'/top'
   end
+  
+   def index
+     @lists=List.all
+   end
 
   private
   #ストロングパラメータ
