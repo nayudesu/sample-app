@@ -1,6 +1,5 @@
 Rails.application.routes.draw do
   get '/top'=>'homes#top' 
-  resources:lists
   get 'lists/new'
   get 'lists/edit'
   post 'lists' => 'lists#create' 
