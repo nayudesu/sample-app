@@ -8,7 +8,7 @@ class ListsController < ApplicationController
     if @list.save
       redirect_to list_path(@list.id)
     else
-      render:new
+      render:index
     end  
 #1&2 データを受け取り新規登録するためのインスタンス作成
   end
